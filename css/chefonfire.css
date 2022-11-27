@@ -1,0 +1,232 @@
+/* Css Reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ***************************NAVIGATION BAR****************************** */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #d9cab6;
+}
+
+/* .search{
+    border: 2px solid rgb(203 166 127);
+    border-radius: 25px;
+    padding: 8px;
+    margin-left: 415px;
+} */
+
+#logo img {
+    height: 86px;
+    width: 86px;
+    margin: 0px 0px;
+}
+
+#logo {
+    margin: 10px 10px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    color: rgb(6, 3, 0);
+    padding: 1px 25px;
+    font-family: 'Qwitcher Grypen', cursive;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 30px;
+   
+
+}
+
+#navbar ul li a:hover {
+    color: rgb(10, 1, 1);
+    background-color: rgb(253, 248, 248);
+}
+
+
+
+/* ****************************************** HOME SECTION **************************** */
+#home{
+    display: flex;
+    height: 618px;
+    flex-direction: column;
+    padding: 15px 181px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../img/sec9.jpg') no-repeat center center/cover;
+    
+    position: absolute;
+    height: 119%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.65
+}
+
+
+/* *********************************UTILITY CLASSES******************* */
+#home h1{
+    color: rgb(10, 10, 10);
+    text-align: center;
+    font-family: 'Qwitcher Grypen', cursive;
+    margin-top: 5px;
+
+}
+#home p{
+    color: rgb(10, 10, 10);
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Qwitcher Grypen', cursive;
+   
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box {
+    border: 2px solid red;
+    padding: 28px;
+    margin: 7px;
+    border-radius: 20px;
+    background-color: #f5f3f3;
+}
+
+#services .box img{
+   height: 200px;
+   display: block;
+   margin: auto;
+   height: 136px;
+   width: 151px;
+}
+
+/* Client Section */
+
+#client-section{
+   /* height: 344px; */
+   position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('https://images.rawpixel.com/image_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvay02M2EtZHM1NTQ2NDUzNTM0NTM0Nl8yLmpwZw.jpg');
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+    opacity: 0.5;
+    height: 334px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+   height: 120px;
+   /* border: 2px solid black; */
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fHNvY2lhbCUyMG1lZGlhJTIwaWNvbnMlMjAxMDAlMjV3aWR0aHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60')no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: bottom 30px; 
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 48%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Qwitcher Grypen', cursive;
+}
+
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.3rem;
+    margin-top: 207px;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+.h-secondary{
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 2.3rem;
+}
+
+.btn{
+    border: 2px solid gold;
+    background-color: rgb(248, 176, 99);
+    margin: 13px auto;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+   color: rgb(118, 87, 87);
+
+}
+
+.centre{
+    font-family: 'Qwitcher Grypen', cursive;
+    text-align: center;
+}
+
+footer{
+    background: rgb(9, 3, 3);
+    color: rgb(248, 244, 244);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2px;
+    text-align: center;
+    
+}
